@@ -3,17 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: '靜態網頁' });
 });
 
-router.get('/home', function(req, res, next) {
-  res.send('this is home page');
-  // res.render('index', { title: 'Express' });
+/* 範例 */ 
+router.get('/example', function(req, res, next) {
+  res.render('example', { title: '範例' });
 });
 
-router.get('/demo', function(req, res, next) {
-  res.send('this is demo page');
-  // res.render('demo', { title: 'Express' });
-});
+/* 在下方輸入程式碼 */ 
 
 module.exports = router;
