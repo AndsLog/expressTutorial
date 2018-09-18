@@ -41,11 +41,9 @@ router.get('/', function(req, res, next) {
                   <td>${userId}</td>
                   <td>${users[userId].name}</td>
                   <td>${users[userId].age}</td>
-                  <td><a href=/users/user/${userId}>明細</a></td>
               </tr>`;
   });
-  table += `</table>
-            <button type="button" onclick="location.href='/users/create'">新增</button>`;
+  table += `</table>`;
   res.send(table);
 });
 
@@ -61,29 +59,29 @@ router.get('/user/:id', function(req, res, next) {
   res.send(table);
 });
 
-router.get('/create', function(req, res, next) {
-  let form = `<form method="get" action="/users/push">
-                  <label>姓名:
-                      <input type="text" name="name">
-                  </label></br>
-                  <label>年齡:
-                      <input type="text" name="age">
-                  </label></br>
-                  <label>身高:
-                      <input type="text" name="hight">
-                  </label></br>
-                  <label>體重:
-                      <input type="text" name="width">
-                  </label></br>
-                  <label>特徵:
-                      <input type="text" name="feature">
-                  </label></br>
-                  <input type="submit" value="新增">
-              </form>`;
-  res.send(form);
-});
+// router.get('/create', function(req, res, next) {
+//   let form = `<form method="get" action="/users/push">
+//                   <label>姓名:
+//                       <input type="text" name="name">
+//                   </label></br>
+//                   <label>年齡:
+//                       <input type="text" name="age">
+//                   </label></br>
+//                   <label>身高:
+//                       <input type="text" name="hight">
+//                   </label></br>
+//                   <label>體重:
+//                       <input type="text" name="width">
+//                   </label></br>
+//                   <label>特徵:
+//                       <input type="text" name="feature">
+//                   </label></br>
+//                   <input type="submit" value="新增">
+//               </form>`;
+//   res.send(form);
+// });
 
-router.get('/push', function(req, res, next) {
+router.get('/create', function(req, res, next) {
   let user = {};
   let id = userIdSchema[index]
   user[id] = {
