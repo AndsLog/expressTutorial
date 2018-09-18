@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- 
+        form：表單元素
+        method: HTTP提交表單的方式，有GET / POST兩種
+        action: 將表單資訊送到該網址
+     -->
+    <form method="GET" action="/api/example">
+        姓名：<input type="text" name="name"/>
+        年齡：<input type="text" name="age"/>
+        <button type="submit">送出</button>
+    </form>
+  </body>
+</html>
