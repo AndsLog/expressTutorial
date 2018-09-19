@@ -4,8 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var apiRouter = require('./routes/api');
+var indexRouter = require('./routes/index');//同下
+var apiRouter = require('./routes/api');//in vscode按ctrl滑鼠點前面的網址可以到該routes資料夾下的檔案
+var abcRouter = require('./routes/api');
 
 var app = express();
 
@@ -19,8 +20,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/api', apiRouter);
+app.use('/', indexRouter);//接到第7行
+app.use('/api', apiRouter);//接到第8行//多一個路由這裡就要多一行
+app.use('/api', abcRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
