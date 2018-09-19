@@ -1,7 +1,8 @@
 (function () {
     class Example {
         constructor() {
-            this.apiExample = this.apiExample.bind(this);
+            this.apiQueryExample = this.apiQueryExample.bind(this);
+            this.apiBodyExample = this.apiBodyExample.bind(this);
         }
 
         /**
@@ -9,9 +10,18 @@
          * @param {object} req http request
          * @param {object} res http response
         */
-        apiExample(req, res) {
+        apiQueryExample(req, res) {
             res.status(200).send(req.query);
         }
+
+        /**
+         * api 範例程式，取得body中的值，並回傳給瀏覽器
+         * @param {object} req http request
+         * @param {object} res http response
+        */
+       apiBodyExample(req, res) {
+        res.status(200).send(req.body);
+    }
     }
 
     module.exports = new Example();

@@ -10,10 +10,20 @@
         method: HTTP提交表單的方式，有GET / POST兩種
         action: 將表單資訊送到該網址
      -->
-    <form method="GET" action="/api/example">
-        姓名：<input type="text" name="name"/>
-        年齡：<input type="text" name="age"/>
-        <button type="submit">送出</button>
+    <form method="GET" action="api/example">
+        水果：<input id="name" type="text" name="fruit"/>
+        數量：<input id="age" type="text" name="number"/>
+        <button type="submit" id="send-get">送出</button>
     </form>
+
+    <!-- ajax -->
+      姓名：<input id="name" type="text" name="name"/>
+      年齡：<input id="age" type="text" name="age"/>
+      <button type="submit" id="send-post">送出</button>
+
+      <div id="show-res"></div>
+      <div id="show-res-json"></div>
+
+      <script type="text/javascript" src="../javascripts/example.js"></script>
   </body>
 </html>
