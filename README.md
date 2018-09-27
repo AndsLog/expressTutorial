@@ -1,7 +1,7 @@
 ## node.js express 練習題─query url
 
 ### 目的
-熟悉router的應用、了解前端表單如何將資訊傳送至後端及從url 的 query 中記得資料
+熟悉router的應用、了解前端表單如何將資訊傳送至後端及從url 的 query 中取得資料
 
 ### 使用須知
 
