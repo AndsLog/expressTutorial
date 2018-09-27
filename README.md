@@ -21,3 +21,5 @@ npm start
 - 點擊 "example頁面"
   - 水果數量表單使用html的fom元素傳送訊息
   - 姓名年齡表單使用javascript ajax傳送訊息
+
+- 觀察兩表單畫面呈現有何不同
