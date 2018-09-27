@@ -1,4 +1,4 @@
-## node.js express 練習題─ajax
+## node.js express ajax範例
 
 ### 目的
 了解ajax及前端頁面的javascript撰寫方式
