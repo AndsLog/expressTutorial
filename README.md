@@ -1,4 +1,7 @@
-## node.js express 範例
+## node.js express 練習題─query url
+
+### 目的
+熟悉router的應用、了解前端表單如何將資訊傳送至後端及從url 的 query 中記得資料
 
 ### 使用須知
 
@@ -12,6 +15,7 @@ cd {存放專案的路徑}\expressToturial
 npm install
 npm start
 ```
+- 開啟瀏覽器，輸入http://localhost:3000/
 
 ### 檔案架構
 ```
