@@ -1,4 +1,4 @@
-## node.js express 範例
+## node.js express 練習題─ajax
 
 ### 使用須知
 
@@ -12,6 +12,8 @@ cd {存放專案的路徑}\expressToturial
 npm install
 npm start
 ```
+
+- 開啟瀏覽器，輸入http://localhost:3000/
 
 ### 檔案架構
 ```
