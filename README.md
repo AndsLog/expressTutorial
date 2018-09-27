@@ -13,6 +13,16 @@ npm install
 npm start
 ```
 
+- 開啟瀏覽器，輸入http://localhost:3000/
+
+- 點擊 "home"，會出現 "this is home page" 字串
+
+- 點擊 "home"，會出現 "this is demo page" 字串
+
+- 點擊 "users"，為所有會員的列表
+  - 輸入```http://localhost:3000/users/{會員id}```，能觀看該會員詳細資訊
+  - 輸入```http://localhost:3000/users/create?name={姓名}&age={年齡}&hight={身高}&width={寬}&feature={特色}```，能以query的方式新增會員
+
 ### 檔案架構
 ```
 ├─bin
